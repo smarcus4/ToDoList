@@ -1,0 +1,124 @@
+﻿body {
+    width: 100%;
+    padding: 0;
+    background-color: blue;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(180deg, #ffffff, #bae2f6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.pageTitle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: center;
+    color: #01163b;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 5px 8px 10px azure;
+    
+}
+
+
+
+.todo {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: colunn;
+    width: 500px;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.instructions {
+    font-size: 20px;
+    color: #021f54;
+    font-size: 20px;
+    border-left: 3px solid #1a9fe4;
+    padding-left: 10px;
+    transition: all .2s ease-in-out;
+}
+
+hr{
+    background-color: black;
+    width: 800px;
+    text-align: center;
+    height:5px;
+
+}
+.todo > p:hover {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.todo > #startApp:hover{
+    cursor: pointer;
+}
+
+.buttonClass {
+    background-color: #021f54;
+    color: azure;
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #bae2f6;
+    padding: 3px;
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.inputClass{
+    margin-top: 30px;
+    width: 400px;
+    height: 30px;
+}
+
+
+.itemHolder{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    padding-bottom: 50px;
+}
+.listClass {
+    width: 800px;
+    font-size: 22px;
+    list-style: none;
+    margin-left: 150px;
+    flex-wrap: wrap;
+    line-height: 50px;
+    /*transition: all .2s ease-in-out;*/
+}
+
+
+
+.listClass:hover {
+   
+    cursor: pointer;
+}
+    
+.listClass::before {
+    content: "• ";
+    color: #1a9fe4; /* or whatever color you prefer */
+}
+.deleteClass {
+    background-color: #021f54;
+    color: azure;
+    border: 2px solid #bae2f6;
+    width: 100px;
+    margin-left: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.removed {
+    text-decoration: line-through;
+    cursor: pointer;
+    margin-left:100px;
+}
